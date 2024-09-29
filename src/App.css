@@ -1,0 +1,58 @@
+/* Magical background */
+.magical-background {
+    background: linear-gradient(120deg, #000428 0%, #004e92 100%);
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .magical-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.mos.cms.futurecdn.net/qffhAnbCiasdroDChnLS6U.jpg');
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  
+  /* Title magic style */
+  .magic-title {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #a8c0ff;
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #a8c0ff, 0 0 40px #a8c0ff, 0 0 50px #a8c0ff, 0 0 60px #a8c0ff, 0 0 70px #a8c0ff;
+  }
+  
+  /* Filter headings */
+  .magic-filter-heading {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #a8c0ff;
+    text-shadow: 0 0 5px #000;
+    margin-bottom: 5px;
+  }
+  
+  /* Magic text */
+  .magic-text {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #000428;
+    text-shadow: 0 0 5px #000;
+  }
+  
+  /* Card hover effect */
+  .magic-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+  }
+  
+  .magic-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 25px rgba(168, 192, 255, 0.7);
+  }
+  
+  /* Font import */
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+  
